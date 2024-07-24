@@ -1,9 +1,9 @@
-using Microsoft.AspNetCore.Mvc;
-using Sales_NET8.Web.Models;
-using System.Diagnostics;
-
 namespace Sales_NET8.Web.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
+    using Sales_NET8.Web.Models;
+    using System.Diagnostics;
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -14,6 +14,16 @@ namespace Sales_NET8.Web.Controllers
         }
 
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult About() 
+        {
+            return View();
+        }
+
+        public IActionResult Contact() 
         {
             return View();
         }

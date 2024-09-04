@@ -1,4 +1,4 @@
-﻿@model Sales_NET8.Web.Data.Entities.Country
+﻿@model Sales_NET8.Web.Data.Entities.Category
 
 @{
     ViewData["Title"] = "Edit";
@@ -6,16 +6,16 @@
 
 <h1>Editar</h1>
 
-<h4>País</h4>
+<h4>Categoria</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />          
+            <input type="hidden" asp-for="Id" />
             
-            <partial name="_Country" />
-           
+            <partial name="_Category" />
+
             <div class="form-group">
                 <input type="submit" value="Guardar" class="btn btn-primary" />
             </div>
@@ -24,7 +24,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Voltar à Lista</a>
+    <a asp-action="Index">Voltar à lista</a>
 </div>
 
 @section Scripts {

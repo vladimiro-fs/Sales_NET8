@@ -1,8 +1,8 @@
 namespace Sales_NET8.Web.Controllers
 {
+    using System.Diagnostics;
     using Microsoft.AspNetCore.Mvc;
     using Sales_NET8.Web.Models;
-    using System.Diagnostics;
 
     public class HomeController : Controller
     {
